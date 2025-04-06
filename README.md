@@ -7,4 +7,4 @@ Ranking
 Número de tentativas
 Pontuação
 
-O objetivo do jogo é que o usuário desculpra qual é o número secreto.
+O objetivo do jogo é que o usuário descubra qual é o número secreto.
