@@ -45,7 +45,8 @@ public class jogodeAdivinhacao {
             switch (menu) {
                 case 1:
                     System.out.print("\nDigite seu Nome: ");
-                    String nomeJogador = scanner.next();
+                    scanner.nextLine();
+                    String nomeJogador = scanner.nextLine();
                     
                     System.out.println("Escolha seu nível de dificukdade🤔:");
                     System.out.println("1 - Fácil");
@@ -75,7 +76,7 @@ public class jogodeAdivinhacao {
                             limiteMaximo = 500;
                             nomeNivel = "Médio";
                     }
-                    limiteTentativas = limiteMaximo / 5;
+                    limiteTentativas = limiteMaximo / 10;
                     int numeroSecreto = random.nextInt(limiteMaximo) + 1;
                     int palpite = 0;
                     int tentativas = 0;
@@ -99,15 +100,15 @@ public class jogodeAdivinhacao {
                         int pontuacao = (limiteMaximo * 10)/tentativas;
                         System.out.println("sua prontuação é: " + pontuacao + "pontos!");
                         
-                             if (limiteMaximo == 50 && tentativas < recordeFacil) {
+                             if (limiteMaximo == 100 && tentativas < recordeFacil) {
                             recordeFacil = tentativas;
                             recordistaFacil = nomeJogador;
                             System.out.println("🥇 Novo recorde no nível Fácil!");
-                        } else if (limiteMaximo == 100 && tentativas < recordeMedio) {
+                        } else if (limiteMaximo == 500 && tentativas < recordeMedio) {
                             recordeMedio = tentativas;
                             recordistaMedio = nomeJogador;
                             System.out.println("🥇 Novo recorde no nível Médio!");
-                        } else if (limiteMaximo == 200 && tentativas < recordeDificil) {
+                        } else if (limiteMaximo == 1000 && tentativas < recordeDificil) {
                             recordeDificil = tentativas;
                             recordistaDificil = nomeJogador;
                             System.out.println("🥇 Novo recorde no nível Difícil!");
