@@ -4,3 +4,7 @@ Essa é uma versão melhorada do Jogo do Número Secreto que fiz em JavaScrip, p
 Menu
 Níveis de dificuldade
 Ranking
+Número de tentativas
+Pontuação
+
+O objetivo do jogo é que o usuário desculpra qual é o número secreto.
